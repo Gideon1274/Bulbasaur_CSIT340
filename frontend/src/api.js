@@ -1,4 +1,4 @@
-// Utility function for fetching data from the Java API with error handlingx
+// Utility function for fetching data from the Java API with error handling
 
 export async function fetchReportData(url, options = {}) {
   try {
