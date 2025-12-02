@@ -1,13 +1,87 @@
+/* Enhanced global styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: #000000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Centered container for login/register */
+.auth-container {
+  max-width: 420px;
+  margin: 80px auto;
+  background: #4B352A;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px #4B352A;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #4B352A;
+}
+
+/* Input fields */
+.auth-container input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+
+.auth-container input::placeholder {
+  color: #dddddd;
+}
+
+/* Buttons */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background: #ffcf33;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #333;
+}
+
+.btn-primary:hover {
+  background: #ffdc66;
+  transform: translateY(-2px);
+}
+
+/* Links */
+.auth-container p {
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.auth-container a {
+  color: #ffe48a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
 }
