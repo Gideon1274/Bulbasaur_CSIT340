@@ -53,6 +53,27 @@ function LogoutButton({ onLogout }) {
   );
 }
 
+
+function ProfileButton() {
+  const profileStyle = {
+    color: 'white',
+    textDecoration: 'none',
+    fontSize: '1.05em',
+    backgroundColor: '#6FBF4A', 
+    padding: '7px 14px',
+    borderRadius: '6px',
+    fontWeight: '600',
+    marginRight: '10px',
+    display: 'inline-block'   
+  };
+
+  return (
+    <Link to="/profile" style={profileStyle}>
+      Profile
+    </Link>
+  );
+}
+
 function Navbar({ totalItems, onLogout, user }) {
   const linkStyle = { 
     color: 'black',
@@ -110,7 +131,9 @@ function Navbar({ totalItems, onLogout, user }) {
         </ul>
       </div>
 
+      {}
       <div style={{ display: 'flex', alignItems: 'center' }}>
+        <ProfileButton />   {}
         <CartButton itemCount={totalItems} />
         {onLogout && <LogoutButton onLogout={onLogout} />}
       </div>
